@@ -1,0 +1,29 @@
+salary = round(float(input("Kāds ir jūsu mēneša algas apmērs? ")),2)
+years = round(float(input("Kāds ir jūsu nostrādāto gadu skaits uzņēmumā? ")))
+if years > 2:
+    bonus = round((years - 2)*salary*15/100, 2)
+else:
+    bonus = 0
+print(bonus)
+
+#---------------------------------------------
+
+a = float(input("Lūdzu ievadiet pirmo skaitli a: "))
+b = float(input("Lūdzu ievadiet otro skaitli b: "))
+c = float(input("Lūdzu ievadiet trešo skaitli c: "))
+
+if(a<=b and a<=c):
+    if(b<=c):
+        print("a,b,c ",a,b,c)
+    else:
+        print("a,c,b ",a,c,b)
+elif(b<=a and b<=c):
+    if(a<=c):
+        print("b,a,c ",b,a,c)
+    else:
+        print("b,c,a",b,c,a)
+else:
+    if(a<=b):
+        print("c,a,b",c,a,b)
+    else:
+        print("c,b,a",c,b,a)
