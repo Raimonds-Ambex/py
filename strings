@@ -1,0 +1,46 @@
+#Lietotājs ievada vārdu.
+#Tiek atgriezts lietotāja vārds apgriezts un sākas ar lielo burtu un papildu teksu pamatīgs juceklis vai ne pirmais lietotāja burts?
+#Valdis -> Sidlav, pamatigs juceklis vai ne V?
+#
+
+name = input("Lūdzu ievadiet vārdu: ")
+reverse_name = name[::-1]
+print (reverse_name.lower().title() + ", pamatīgs juceklis vai ne", name[0] + "?")
+
+# ----------------
+# Lietotājs(pirmais spēlētājs) ievada tekstu.
+# Tiek izvadītas tikai zvaigznītes burtu vietā. Pieņemsim, ka cipari nebūs, bet atstarpes gan var būt
+# Lietotājs(tātad otrs spēlētājs) ievada simbolu. 
+# Ja burts ir tad tas burts attiecīgajās vietās tiek parādīts, visi pārējie burti paliek par zvaigznītēm.
+# Kartupeļu lauks -> ********* *****
+# ievada a -> *a****** *a***
+
+txt = input("Lūdzu ievadiet tekstu: ")
+
+new_txt = ''
+for letter in txt:
+    if letter == ' ':
+        new_txt += letter 
+    else:
+        new_txt += '*'
+print(new_txt)
+
+
+while True:
+    simb = input("Lūdzu ievadiet simbolu: ")
+    if len(simb)==1:
+        break
+    print("Atļauts tikai viens simbols. ")
+        
+result = ''
+for letter in txt:
+    if letter == ' ' or letter == simb:
+        result += letter 
+    else:
+        result += '*'
+        
+print(result)
+
+
+
+
