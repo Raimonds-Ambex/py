@@ -33,3 +33,4 @@ while x <= y:
     print(f'{x}  kubā: {x**3}')
     visi_kubi.append(x**3)
     x += 1
+print(f'Visi kubi: {visi_kubi}')
