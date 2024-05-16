@@ -28,8 +28,8 @@ def get_city_year(p_start, perc, delta, p_target):
             return i
         i += 1
 
-        if i > 100:
-            return "100 years limit"
+        if i > 1000:
+            return "1000 years limit"
 
 p_start = int(input("iedzīvotāju skaits sākumā: "))
 perc = float(input("iedzīvotāju skaita pieagums procentuāli: "))
