@@ -1,0 +1,29 @@
+# 6 kauliņi
+# Uztaisiet 100 000 garu sarakstu ar 6 metam kauliņu summu. (6 metienu summa vienā mērijumā) 
+# Saskaitiet šo summu biežumu (izmantojam Counter)
+# Attēlojam stabiņu( vai kādā citā) diagrammā.
+import random
+from collections import Counter
+import matplotlib.pyplot as plt
+
+sum = []
+for _ in range(100000):
+
+    su = 0
+    for _ in range(6):
+        su += random.randint(1, 6)
+    sum.append(su)
+
+c = Counter(list(sum))
+cc = (sorted(c.items()))
+
+x = []
+y = []
+for value in cc:
+    x.append(value[0])
+    y.append(value[1])
+
+plt.plot(x, y)
+plt.show()
+
+#  neizdevās pip install matplotlib :   command not found: pip
