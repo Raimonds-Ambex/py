@@ -1,6 +1,6 @@
 # Lai varētu izmantot Raspberry pinus, importējam RPi.GPIO moduli
 import RPi.GPIO as GPIO
-# from time import sleep - jau ir importēts main.py
+from time import sleep
 
 # Izvēlamies, kura numuru sistēma tiks izmantota (GPIO.BOARD vai GPIO.BCM)
 GPIO.setmode(GPIO.BCM)
