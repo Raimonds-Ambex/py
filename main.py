@@ -1,5 +1,6 @@
-# v1
 # Raspberry Pi projekts - robots, kas pabrauc nost, ja notiek ar kustību sensoru konstatēta kustība
+# demo :  https://test.urulu.lv/
+
 # Lai nākotnē varētu izmantot vairāk sensorus, tie tiks sadalīti pa kodoliem
 
 from gpiozero import MotionSensor
