@@ -1,1 +1,1 @@
-demo video var apskatīt šeit: # demo :  https://test.urulu.lv/
+demo video var apskatīt šeit:  https://test.urulu.lv/
